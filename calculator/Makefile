@@ -1,0 +1,12 @@
+CC = g++
+CFLAGS = -Wall -Wextra -std=c++17
+TARGET = calculator
+SRCS = main.cpp
+
+all: $(TARGET)
+
+$(TARGET): $(SRCS)
+	$(CC) $(CFLAGS) -o $(TARGET) $(SRCS)
+
+clean:
+	rm -f $(TARGET)
